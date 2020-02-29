@@ -2,4 +2,4 @@
 venv
 Lib
 Scripts
-pyvenv.cfg
+venv/pyvenv.cfg

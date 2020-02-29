@@ -11,10 +11,15 @@ class MyTestCase(unittest.TestCase):
         self.assertIsInstance(self.calculator, Calculator)
 
     def test_result(self):        
-        self.assertEqual(self.calculator.result, 7)
+        self.assertEqual(self.calculator.result, 0)
 
     def test_add(self):
         self.assertEqual(self.calculator.add(3, 5), 8)
+        self.assertEqual(self.calculator.result, 8)
+
+    def test_subtract(self):
+        self.assertEqual(self.calculator.subtract(3, 5), -2)
+        self.assertEqual(self.calculator.result, -2)
 
 
 if __name__ == '__main__':

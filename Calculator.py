@@ -18,7 +18,7 @@ def fn_division(a, b):
 
 
 def fn_square(a):
-    return a * a
+    return float(a) * float(a)
 
 
 def fn_squareroot(a):

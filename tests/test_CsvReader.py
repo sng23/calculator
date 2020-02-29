@@ -37,6 +37,12 @@ class CsvReaderTests(unittest.TestCase):
             result = float(row['Result'])
             self.assertEqual(round(self.calculator.divide(row['Value 2'], row['Value 1']), 9), result)
 
+    def test_square(self):
+        test_data = CsvReader('data/Unit Test Square.csv').data
+        for row in test_data:
+            result = float(row['Result'])
+            self.assertEqual(self.calculator.square(row['Value 1']), result)
+
 
 if __name__ == '__main__':
     unittest.main()

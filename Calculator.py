@@ -21,6 +21,10 @@ def fn_square(a):
     return a * a
 
 
+def fn_squareroot(a):
+    return math.sqrt(a)
+
+
 class Calculator:
     result = 0
 
@@ -47,4 +51,6 @@ class Calculator:
         self.result = fn_square(a)
         return self.result
 
+    def squareroot(self, a):
+        self.result = fn_squareroot(a)
         return self.result

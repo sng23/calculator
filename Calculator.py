@@ -1,4 +1,7 @@
-def addition(a, b):
+import math
+
+
+def fn_addition(a, b):
     return a + b
 
 
@@ -13,7 +16,7 @@ class Calculator:
         pass
 
     def add(self, a, b):
-        self.result = addition(a, b)
+        self.result = fn_addition(a, b)
         return self.result
 
     def subtract(self, a, b):

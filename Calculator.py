@@ -9,6 +9,10 @@ def fn_subtraction(a, b):
     return a - b
 
 
+def fn_multiplication(a, b):
+    return a * b
+
+
 class Calculator:
     result = 0
 
@@ -21,6 +25,10 @@ class Calculator:
 
     def subtract(self, a, b):
         self.result = fn_subtraction(a, b)
+        return self.result
+
+    def multiply(self, a, b):
+        self.result = fn_multiplication(a, b)
         return self.result
 
         return self.result

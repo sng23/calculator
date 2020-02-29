@@ -23,6 +23,11 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.calculator.subtract(3, 5), result)
         self.assertEqual(self.calculator.result, result)
 
+    def test_multiply(self):
+        result = 15
+        self.assertEqual(self.calculator.multiply(3, 5), result)
+        self.assertEqual(self.calculator.result, result)
+
 
 
 if __name__ == '__main__':

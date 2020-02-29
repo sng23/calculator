@@ -13,6 +13,10 @@ def fn_multiplication(a, b):
     return a * b
 
 
+def fn_division(a, b):
+    return a / b
+
+
 class Calculator:
     result = 0
 
@@ -29,6 +33,10 @@ class Calculator:
 
     def multiply(self, a, b):
         self.result = fn_multiplication(a, b)
+        return self.result
+
+    def divide(self, a, b):
+        self.result = fn_division(a, b)
         return self.result
 
         return self.result

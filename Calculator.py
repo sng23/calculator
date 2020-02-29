@@ -10,7 +10,7 @@ def fn_subtraction(a, b):
 
 
 def fn_multiplication(a, b):
-    return a * b
+    return float(a) * float(b)
 
 
 def fn_division(a, b):

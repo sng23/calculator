@@ -5,3 +5,4 @@
 * 28-FEB  SG  Feature: Add and Subtract w/ Tests
 * 29-FEB  SG  Feature: Multiply, Divide, Square, Sqrt w/Tests
 * 29-FEB  SG  Task: Hook up Travis
+* 29-FEB  SG  Feature: All operations over csv inputs w/Tests

@@ -2,7 +2,7 @@ import math
 
 
 def fn_addition(a, b):
-    return a + b
+    return float(a) + float(b)
 
 
 def fn_subtraction(a, b):

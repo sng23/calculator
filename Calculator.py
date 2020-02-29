@@ -6,7 +6,7 @@ def fn_addition(a, b):
 
 
 def fn_subtraction(a, b):
-    return a - b
+    return float(a) - float(b)
 
 
 def fn_multiplication(a, b):

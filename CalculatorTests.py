@@ -19,8 +19,10 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.calculator.result, result)
 
     def test_subtract(self):
-        self.assertEqual(self.calculator.subtract(3, 5), -2)
-        self.assertEqual(self.calculator.result, -2)
+        result = -2
+        self.assertEqual(self.calculator.subtract(3, 5), result)
+        self.assertEqual(self.calculator.result, result)
+
 
 
 if __name__ == '__main__':

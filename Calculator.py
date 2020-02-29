@@ -5,7 +5,7 @@ def fn_addition(a, b):
     return a + b
 
 
-def subtraction(a, b):
+def fn_subtraction(a, b):
     return a - b
 
 
@@ -20,5 +20,7 @@ class Calculator:
         return self.result
 
     def subtract(self, a, b):
-        self.result = subtraction(a, b)
+        self.result = fn_subtraction(a, b)
+        return self.result
+
         return self.result

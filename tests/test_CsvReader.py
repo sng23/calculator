@@ -43,6 +43,17 @@ class CsvReaderTests(unittest.TestCase):
             result = float(row['Result'])
             self.assertEqual(self.calculator.square(row['Value 1']), result)
 
+    def test_squareroot(self):
+        test_data = CsvReader('data/Unit Test Square Root.csv').data
+        for row in test_data:
+            data = row['Result']
+            result = float(data)
+            if "." in data:
+                sigfigs = len(data.split('.')[1])
+                self.assertEqual(round(self.calculator.squareroot(row['Value 1']), sigfigs), result)
+            else:
+                self.assertEqual(self.calculator.squareroot(row['Value 1']), result)
+
 
 if __name__ == '__main__':
     unittest.main()

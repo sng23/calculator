@@ -22,7 +22,7 @@ def fn_square(a):
 
 
 def fn_squareroot(a):
-    return math.sqrt(a)
+    return math.sqrt(float(a))
 
 
 class Calculator:

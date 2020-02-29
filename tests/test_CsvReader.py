@@ -31,6 +31,12 @@ class CsvReaderTests(unittest.TestCase):
             result = float(row['Result'])
             self.assertEqual(self.calculator.multiply(row['Value 1'], row['Value 2']), result)
 
+    def test_division(self):
+        test_data = CsvReader('data/Unit Test Division.csv').data
+        for row in test_data:
+            result = float(row['Result'])
+            self.assertEqual(round(self.calculator.divide(row['Value 2'], row['Value 1']), 9), result)
+
 
 if __name__ == '__main__':
     unittest.main()

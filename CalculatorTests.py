@@ -33,6 +33,10 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.calculator.divide(15, 5), result)
         self.assertEqual(self.calculator.result, result)
 
+    def test_square(self):
+        result = 9
+        self.assertEqual(self.calculator.square(3), result)
+        self.assertEqual(self.calculator.result, result)
 
 
 if __name__ == '__main__':

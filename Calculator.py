@@ -17,6 +17,10 @@ def fn_division(a, b):
     return a / b
 
 
+def fn_square(a):
+    return a * a
+
+
 class Calculator:
     result = 0
 
@@ -37,6 +41,10 @@ class Calculator:
 
     def divide(self, a, b):
         self.result = fn_division(a, b)
+        return self.result
+
+    def square(self, a):
+        self.result = fn_square(a)
         return self.result
 
         return self.result

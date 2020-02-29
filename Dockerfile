@@ -2,4 +2,6 @@ FROM python:3
 
 ADD . .
 
-CMD ["python", "./CalculatorTests.py"]
+RUN pip install -r requirements.txt
+
+CMD ["python", "-m", "unittest", "discover", "-s","tests"]
